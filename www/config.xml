@@ -16,9 +16,23 @@
         </author>
         
         <preference name="phonegap-version" value="3.1.0" />
-         <plugins>
-            <plugin name="Camera" value="org.apache.cordova.core.camera.camera" />
-        </plugins>
+  
+        <feature name="NetworkStatus"><param name="android-package" value="org.apache.cordova.NetworkManager" /></feature>
+        <feature name="NetworkStatus"><param name="ios-package" value="CDVConnection" /></feature>
+        <feature name="File"><param name="android-package" value="org.apache.cordova.FileUtils" /></feature>
+        <feature name="FileTransfer"><param name="android-package" value="org.apache.cordova.FileTransfer" /></feature>
+        <feature name="File"><param name="ios-package" value="CDVFile" /></feature>
+        <feature name="FileTransfer"><param name="ios-package" value="CDVFileTransfer" /></feature>
+        <feature name="Camera"><param name="android-package" value="org.apache.cordova.camera.CameraLauncher" /></feature>
+        <feature name="Camera">  <param name="ios-package" value="CDVCamera" /></feature>
+        <feature name="File"><param name="android-package" value="org.apache.cordova.file.FileUtils" /></feature>
+        <feature name="Capture"><param name="android-package" value="org.apache.cordova.mediacapture.Capture" /></feature>
+        <feature name="Capture"><param name="ios-package" value="CDVCapture" /></feature> 
+
+
+        <gap:plugin name="org.apache.cordova.camera" />
+        <gap:plugin name="org.apache.cordova.media-capture" />
+        <gap:plugin name="org.apache.cordova.file" /> 
 <!-- 
         <uses-permission android:name="android.permission.CAMERA" />
         <uses-feature android:name="android.hardware.camera" />
