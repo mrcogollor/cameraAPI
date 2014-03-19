@@ -20,14 +20,6 @@
         <gap:plugin name="org.apache.cordova.camera" />
         <gap:plugin name="org.apache.cordova.media-capture" />
         <gap:plugin name="org.apache.cordova.file" /> 
-<!-- 
-        <uses-permission android:name="android.permission.CAMERA" />
-        <uses-feature android:name="android.hardware.camera" />
-        <uses-feature android:name="android.hardware.camera.autofocus" />
-
-
-        <plugin name="Camera" value="org.apache.cordova.CameraLauncher" /> -->
-
 
         <!-- if a single icon is specified then Build will use it for all platforms -->
         <icon src="icons/icon.png" />
@@ -59,8 +51,8 @@
 
 
         <!-- to enable individual permissions use the following examples -->
-<!--         <feature name="http://api.phonegap.com/1.0/device"/>
-        <feature name="http://api.phonegap.com/1.0/camera"/> -->
+        <feature name="http://api.phonegap.com/1.0/device"/>
+        <feature name="http://api.phonegap.com/1.0/camera"/>
 
         <access origin="http://phonegap.com" subdomains="true" />
 
