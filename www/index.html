@@ -17,7 +17,6 @@
     // Cordova is ready to be used!
     //
     function onDeviceReady() {
-        alert(navigator.camera);
         pictureSource=navigator.camera.PictureSourceType;
         // TODO: FIX BUG default has changed to FILE_URI
         destinationType=navigator.camera.DestinationType;
@@ -67,7 +66,6 @@
     //
     function capturePhoto() {
       // Take picture using device camera and retrieve image as base64-encoded string
-     alert(navigator.camera,'Error');
       navigator.camera.getPicture(onPhotoDataSuccess, onFail, { quality: 50, 
                                                                destinationType: destinationType.DATA_URL });
     }
