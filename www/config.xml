@@ -17,6 +17,10 @@
         
         <preference name="phonegap-version" value="3.1.0" />
 
+        <uses-permission android:name="android.permission.CAMERA" />
+        <uses-feature android:name="android.hardware.camera" />
+        <uses-feature android:name="android.hardware.camera.autofocus" />
+
         <!-- if a single icon is specified then Build will use it for all platforms -->
         <icon src="icons/icon.png" />
         
