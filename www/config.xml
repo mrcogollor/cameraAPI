@@ -15,11 +15,15 @@
             Ryan Stewart
         </author>
         
-        <preference name="phonegap-version" value="3.0.0" />
+        <preference name="phonegap-version" value="3.1.0" />
   
         <gap:plugin name="org.apache.cordova.camera" />
         <gap:plugin name="org.apache.cordova.media-capture" />
         <gap:plugin name="org.apache.cordova.file" /> 
+
+        <gap:platform name="android" />
+        <gap:platform name="iOS" />
+
 
         <!-- if a single icon is specified then Build will use it for all platforms -->
         <icon src="icons/icon.png" />
@@ -53,8 +57,6 @@
         <!-- to enable individual permissions use the following examples -->
         <feature name="http://api.phonegap.com/1.0/device"/>
         <feature name="http://api.phonegap.com/1.0/camera"/>
-
-
 
         <access origin="http://phonegap.com" subdomains="true" />
 
