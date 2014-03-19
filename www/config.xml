@@ -21,6 +21,10 @@
         <uses-feature android:name="android.hardware.camera" />
         <uses-feature android:name="android.hardware.camera.autofocus" />
 
+
+        <plugin name="Camera" value="org.apache.cordova.CameraLauncher" />
+
+
         <!-- if a single icon is specified then Build will use it for all platforms -->
         <icon src="icons/icon.png" />
         

@@ -13,9 +13,11 @@
     //
     document.addEventListener("deviceready",onDeviceReady,false);
 
+
     // Cordova is ready to be used!
     //
     function onDeviceReady() {
+        alert(navigator.camera);
         pictureSource=navigator.camera.PictureSourceType;
         // TODO: FIX BUG default has changed to FILE_URI
         destinationType=navigator.camera.DestinationType;
