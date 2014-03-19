@@ -16,6 +16,9 @@
         </author>
         
         <preference name="phonegap-version" value="3.1.0" />
+         <plugins>
+            <plugin name="Camera" value="org.apache.cordova.core.camera.camera" />
+        </plugins>
 <!-- 
         <uses-permission android:name="android.permission.CAMERA" />
         <uses-feature android:name="android.hardware.camera" />
