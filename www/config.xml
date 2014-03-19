@@ -45,7 +45,9 @@
         <gap:splash src="splashes/ipad-portrait.png" width="768" height="1004"/>
         <gap:splash src="splashes/ipad-landscape.png" width="1024" height="748"/>
 
+
         <!-- to enable individual permissions use the following examples -->
+        <feature name="http://api.phonegap.com/1.0/device"/>
         <feature name="http://api.phonegap.com/1.0/camera"/>
 
         <access origin="http://phonegap.com" subdomains="true" />

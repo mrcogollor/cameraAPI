@@ -73,6 +73,9 @@
     //
     function capturePhotoEdit() {
       // Take picture using device camera, allow edit, and retrieve image as base64-encoded string  
+      if (!navigator.camera) {
+        alert('no hay camara', 'Error');
+      }
       navigator.camera.getPicture(onPhotoDataSuccess, onFail, { quality: 20, allowEdit: true,
                                                                 destinationType: destinationType.DATA_URL}); 
     }
