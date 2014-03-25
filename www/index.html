@@ -64,8 +64,10 @@
     //
     function capturePhoto() {
       // Take picture using device camera and retrieve image as base64-encoded string
+
       navigator.camera.getPicture(onPhotoDataSuccess, onFail, { quality: 50,
-        destinationType: destinationType.DATA_URL, direction: 1 });
+        destinationType: destinationType.DATA_URL, cameraDirection: 1 });
+      alert('direccion de la camara' cameraDirection);
     }
 
     // A button will call this function
@@ -88,7 +90,8 @@
     // Called if something bad happens.
     //
     function onFail(message) {
-      alert('Failed because: ' + message);
+      //alert('Failed because: ' + message);
+      alert('direccion de la camara:' + cameraDirection);
     }
 
     </script>
